@@ -1,0 +1,180 @@
+$red: #E53633;
+$black: #1D0706;
+$white: #f7f9ff;
+
+$bp-xs: 300px;
+$bp-sm: 600px;
+$bp-md: 900px;
+$bp-lg: 1200px;
+
+@import url('https://fonts.googleapis.com/css?family=Scada:400,700&display=swap');
+
+html,body,#root,.App{
+	height: 100%;
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+	font-size: 16px;
+	color:$black;
+	font-family: 'Scada', Arial, Helvetica, sans-serif;
+}
+header{
+	padding: 1rem;
+	background-color: $red;
+	color: $white;
+	font-size: 2rem;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+.col-4 {
+	position: relative;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+@media (min-width: $bp-sm) {
+	.col-4 {
+		width: 48%
+	}
+}
+@media (min-width: $bp-md) {
+	.col-4 {
+		width: 22%
+	}
+}
+@media (min-width: $bp-lg) {
+	.col-4 {
+		width: 16%
+	}
+}
+.container {
+	padding: 1rem;
+}
+.card {
+	border-radius: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1rem;
+
+	div {
+		padding: .5rem;
+	}
+	.top {
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		background-color: $white;
+	}
+	.bottom {
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		background-color: $black;
+		color: $white;
+		font-size: .8rem;
+
+		.stat-container {
+			table {
+				border-spacing: 5px;
+				width: 100%;
+				tr {
+					td {
+						text-align: right;
+						&:last-child {
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.type {
+	padding: .2rem .4rem;
+	margin: auto .1rem;
+	font-size: .8rem;
+	border-radius: 13rem;
+	&-normal{
+		color: $white;
+		background-color:$black ;
+	}
+	&-fighting{
+		color: #EF7714;
+		background-color: #E8E4E1 ;
+	}
+	&-flying{
+		color: #0B463C;
+		background-color: #E1E8E7;
+	}
+	&-poison{
+		color: #372638;
+		background-color: rgb(243, 218, 245);
+	}
+	&-ground{
+		color: #EFE9E2;
+		background-color: #51300C;
+	}
+	&-rock{
+		color: #010A0E;
+		background-color: #BEC5C8;
+	}
+	&-bug{
+		color: #0F7B0A;
+		background-color: #C3DEC2;
+	}
+	&-ghost{
+		color: #15021A;
+		background-color: #FDF5FF;
+	}
+	&-steel{
+		color: #D7DCE9;
+		background-color: #444958;
+	}
+	&-fire{
+		color: #FBDDC4;
+		background-color: #EF5614;
+	}
+	&-water{
+		color: #02121F;
+		background-color: rgb(144, 209, 255);
+	}
+	&-grass{
+		color: #021F03;
+		background-color: #C2E2C3;
+	}
+	&-electric{
+		color: #464104;
+		background-color: #FFEC00;
+	}
+	&-psychic{
+		color: #FFFAFC;
+		background-color: #F93893;
+	}
+	&-ice{
+		color: #0A8F95;
+		background-color: #E0FEFF;
+	}
+	&-dragon{
+		color: #EE7309;
+		background-color: #1C0D00;
+	}
+	&-dark{
+		color: #C1BFC3;
+		background-color: #05000E;
+	}
+	&-fairy{
+		color: #5F0063;
+		background-color: #FDCDFF;
+	}
+	&-unknown{
+		color: #6700C8;
+		background-color: #ECDFF8;
+	}
+	&-shadow{
+		color: #C2BFC4;
+		background-color: #292031;
+	}
+
+}
